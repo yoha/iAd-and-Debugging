@@ -28,7 +28,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
         
         let viewsDictionary = ["bannerView": self.bannerView]
         self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
-        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
+        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
         
     }
 
